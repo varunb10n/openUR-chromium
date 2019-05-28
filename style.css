@@ -15,7 +15,7 @@ body {
   overflow: hidden;
 }
 .modal-header {
-  padding: 1em;
+  padding: 0 1em;
   width: 100%;
   -webkit-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
@@ -23,8 +23,7 @@ body {
 }
 .logo {
   height: auto;
-  padding: 20px 0 20px 10px;
-  line-height: 19px;
+  padding: 1.5em 0 0.5em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .logo-icon {
@@ -37,24 +36,20 @@ h1 {
   font-weight: 400;
   margin: 0;
 }
-sup,
-#count,
-#clear,
-#error {
+.small {
   font-size: 10px;
   font-weight: 700;
   font-style: italic;
   letter-spacing: 2px;
   padding-left: 3px;
 }
-#error {
+.small-danger {
   color: rgba(255, 82, 82, 0.87);
 }
 a:link,
 a:visited {
   color: #000;
   outline: 0;
-  /* text-decoration: none; */
 }
 img {
   width: 30px;
@@ -66,8 +61,8 @@ img {
   color: #323439;
   line-height: 24px;
   font-weight: 300;
-  margin-top: 10px;
-  padding-top: 3px;
+  margin-top: 0px;
+  padding-top: 4px;
 }
 .brdr-btm {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -77,13 +72,15 @@ img {
 }
 .btn {
   text-transform: uppercase;
-  padding: 10px;
+  padding: 6px;
   border: none;
   cursor: pointer;
-  width: 60px;
+  width: 80px;
   margin-top: 2px;
 }
-.btn-outline-danger {
+.btn-outline-danger,
+.btn-outline-yellow,
+.btn-outline-success {
   position: absolute;
   bottom: 15px;
   right: 33px;
@@ -92,12 +89,20 @@ img {
   background-color: transparent;
   border: 1px solid rgba(255, 82, 82, 0.87);
 }
-.btn-outline-danger:hover {
+.btn-outline-success {
+  bottom: 0px;
+}
+.btn:hover {
   color: #fff;
-  background-color: rgba(255, 82, 82, 0.87);
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.5s ease 0s;
+  -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+.btn-outline-danger:hover,
+.btn-outline-yellow:hover,
+.btn-outline-success:hover {
+  background-color: rgba(255, 82, 82, 0.87);
 }
 .btn:visited,
 .btn:focus {
@@ -124,14 +129,14 @@ input[type="text"]:focus {
 .modal-list {
   overflow-x: auto;
   overflow-y: auto;
-  max-width: calc(100% - 55px);
+  max-width: calc(100% - 35px);
   max-height: 150px;
-  /* border: 1px solid lime; */
-  padding-left: 19px;
+  padding-left: 25px;
   margin: 0;
 }
 .modal-list li {
-  padding: 8px 0;
+  line-height: 0.9em;
+  padding: 5px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 

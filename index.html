@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>OpenUR</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -14,12 +13,12 @@
       <div class="logo">
         <h1>
           <img src="img/logo.svg" alt="opener logo" class="logo-icon" />
-          OpenUR<sup>spelled Opener!</sup>
+          OpenUR<sup class="small small-danger">spelled Opener!</sup>
         </h1>
       </div>
       <div class="modal-content">
         <label>Open your favorite websites?<br />click OPEN</label>
-        <button class="btn btn-outline-danger " id="openURL">Open</button>
+        <button class="btn btn-outline-danger " id="openURL">open</button>
         <div class="brdr-btm"></div>
       </div>
       <div class="modal-content">
@@ -33,19 +32,34 @@
           />
         </form>
         <p class="or">or</p>
-        <label>Hit ADD to see current <br />website in favorite list</label>
-        <button class="btn btn-outline-danger" id="addURL">Add</button>
+        <label>Click "ADD" to set current <br />website in fav list</label>
+        <button class="btn btn-outline-yellow" id="addURL">add</button>
+
         <div class="brdr-btm"></div>
       </div>
       <div class="modal-content">
-        <span id="count"></span>
+        <label
+          >"ADD ALL" sets all opened<br />
+          tab address to fav list</label
+        >
+        <button class="btn btn-outline-success" id="getAllURL">
+          add all
+        </button>
+      </div>
+      <div class="modal-content">
+        <span class="small"
+          >favorite websites: <span id="count" class="small small-danger"></span
+        ></span>
         <ol class="modal-list" id="child"></ol>
       </div>
       <div class="modal-content">
-        <a href="#" id="clear">clear favorites?</a>
+        <a href="#" id="clear" class="small small-danger">
+          clear favorites<span class="small-danger">&#63;</span>
+        </a>
       </div>
+      <div class="modal-content"></div>
       <div class="modal-content">
-        <p id="error"></p>
+        <p class="small small-danger" id="error"></p>
       </div>
     </div>
 
